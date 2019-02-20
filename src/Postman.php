@@ -1,10 +1,10 @@
 <?php
-namespace Jeylabs\Postman;
+namespace Jeylabs\PowertoolzSupportSdk;
 use GuzzleHttp\Client;
 use GuzzleHttp\Promise;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\RequestOptions as GuzzleRequestOptions;
-class Postman
+class PowertoolzSupportSdk
 {
     const VERSION = '1.0.0';
     const GET_LIST_API = 'api/campaign-subscriber';

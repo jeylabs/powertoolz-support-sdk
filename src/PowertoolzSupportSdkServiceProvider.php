@@ -1,11 +1,11 @@
 <?php
 
-namespace Jeylabs\Postman;
+namespace Jeylabs\PowertoolzSupportSdk;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Container\Container as Application;
 
-class PostmanServiceProvider extends ServiceProvider
+class PowertoolzSupportSdkServiceProvider extends ServiceProvider
 {
     public function boot()
     {

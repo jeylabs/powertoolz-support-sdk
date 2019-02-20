@@ -1,16 +1,16 @@
 {
-  "name": "jeylabs/postman",
+  "name": "jeylabs/powertoolz-support-sdk",
   "type": "library",
   "description": "PHP Library for jEyLaBs Mailing List Subscription",
   "keywords": [
     "jEyLaBs Mailing List Subscriber"
   ],
-  "homepage": "https://github.com/jeylabs/postman",
+  "homepage": "https://github.com/jeylabs/powertoolz-support-sdk",
   "license": "MIT",
   "authors": [
     {
       "name": "jeylabs",
-      "email": "suresh.ceymplon@jeylabs.com",
+      "email": "mano.ceymplon@jeylabs.com.au",
       "homepage": "https://jeylabs.com",
       "role": "Developer"
     }
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Jeylabs\\Postman\\": "src"
+      "Jeylabs\\PowertoolzSupportSdk\\": "src"
     }
   },
   "minimum-stability": "stable",
