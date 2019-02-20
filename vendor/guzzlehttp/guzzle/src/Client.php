@@ -128,6 +128,7 @@ class Client implements ClientInterface
     public function request($method, $uri = '', array $options = [])
     {
         $options[RequestOptions::SYNCHRONOUS] = true;
+        dd(11);
         return $this->requestAsync($method, $uri, $options)->wait();
     }
 

@@ -9,9 +9,9 @@ class PowertoolzSupportSdkServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $source = __DIR__ . '/config/postman.php';
-        $this->publishes([$source => config_path('postman.php')]);
-        $this->mergeConfigFrom($source, 'postman');
+        $source = __DIR__ . '/config/powertoolz-sdk.php';
+        $this->publishes([$source => config_path('powertoolz-sdk.php')]);
+        $this->mergeConfigFrom($source, 'powertoolz-sdk');
     }
 
     public function register()
@@ -21,15 +21,14 @@ class PowertoolzSupportSdkServiceProvider extends ServiceProvider
 
     protected function registerBindings(Application $app)
     {
-        $app->singleton('postman', function ($app) {
+        $app->singleton('PowertoolzSdk', function ($app) {
             $config = $app['config'];
-            return new Postman(
-                $config->get('postman.access_token', null),
-                $config->get('postman.postman_api_base_uri', null),
-                $config->get('postman.async_requests', false)
+            return new PowertoolzSupportSdk(
+                $config->get('powertoolz-sdk.access_token', null),
+                $config->get('powertoolz-sdk.postman_api_base_uri', null),
+                $config->get('powertoolz-sdk.async_requests', false)
             );
         });
-        $app->alias('postman', Postman::class);
-
+        $app->alias('PowertoolzSdk', PowertoolzSupportSdk::class);
     }
 }
