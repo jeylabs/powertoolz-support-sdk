@@ -1,0 +1,28 @@
+{
+  "name": "jeylabs/postman",
+  "type": "library",
+  "description": "PHP Library for jEyLaBs Mailing List Subscription",
+  "keywords": [
+    "jEyLaBs Mailing List Subscriber"
+  ],
+  "homepage": "https://github.com/jeylabs/postman",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "jeylabs",
+      "email": "suresh.ceymplon@jeylabs.com",
+      "homepage": "https://jeylabs.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "~6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jeylabs\\Postman\\": "src"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
